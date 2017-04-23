@@ -33,9 +33,10 @@ function hoverAbout(){
 function whichPage(){
   if ( document.URL.includes("index.html") ) {
   $("#home-btn").addClass('active-home');
-  hoverAbout()
+  hoverAbout();
   hoverResume();
   hoverWriting();
+
   } else if ( document.URL.includes("about.html") ) {
     $("#about-btn").addClass('active-about');
     hoverHome();
