@@ -17,15 +17,18 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/writing.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
-    <!-- Custom CSS -->
-
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
 
 
 </head>
 
 <body>
+  <div id="writingPage">
+
 
   <nav id="header" class="navbar navbar-toggleable-md navbar-light">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,45 +66,216 @@
 
       <div class="row justify-content-center align-items-top">
 
-        <div class="page col-11 col-lg-5" id='about-media' >
+        <div class="page col-11 col-lg-9 light-green-back" id='about-media' >
 
-          <h1>Writing Example</h1>
-          <p> My name in Mandarin is “Huang Jia En,” which means "additional blessing," and my brother is nine years my senior.  Go figure.  I suppose “Whoopsie Huang” doesn’t quite have the same ring to it. </p>
-          <p> A more common term ascribed to me in this day and age is the term “extra,” partially in part to my boundless obsession with wordplay and narratives.  </p>
-          <p> To explain, I am a byproduct of my Taiwanese heritage, Shanghainese upbringing, and American education.   Call it cultural homelessness or a "well rounded" global perspective, but regardless of which corner of the globe I inhabit, I have never been truly at home.  </p>
-          <p> This restlessness results in a genuine love of people and growing interest in storytelling, - whether it be the displaced refugee, rising YouTube star, trends in cosmetic surgery.  I’ll throw my pen (or rather, keyboard, at it).</p>
-          <p> At the end of the day, I’m happy to see you here.  Feel free to say hello at helloimjustina@gmail.com!</p>
+          <h1>Writing</h1>
 
+          <div class="flexcontainer" v-for="example in examples">
+            <a href="writing1.html">
+            <div class="quote-wrapper">
+              <div class="quote">
 
-        </div>
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
 
-        <div class="page col-11 col-lg-5" id='about-summary'>
-          <p> My name in Mandarin is “Huang Jia En,” which means "additional blessing," and my brother is nine years my senior.  Go figure.  I suppose “Whoopsie Huang” doesn’t quite have the same ring to it. </p>
-          <p> A more common term ascribed to me in this day and age is the term “extra,” partially in part to my boundless obsession with wordplay and narratives.  </p>
-          <p> To explain, I am a byproduct of my Taiwanese heritage, Shanghainese upbringing, and American education.   Call it cultural homelessness or a "well rounded" global perspective, but regardless of which corner of the globe I inhabit, I have never been truly at home.  </p>
-          <p> This restlessness results in a genuine love of people and growing interest in storytelling, - whether it be the displaced refugee, rising YouTube star, trends in cosmetic surgery.  I’ll throw my pen (or rather, keyboard, at it).</p>
-          <p> At the end of the day, I’m happy to see you here.  Feel free to say hello at helloimjustina@gmail.com!</p>
+                <p>
+                  {{example.blurb}}
+                </p>
 
-        </div>
+                  <p class="author light-author">{{example.title}}</p>
 
-      </div>
+                  <div class="align-right">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
 
-      </div>
-
-
-    <footer class="footer">
-      <div class="container">
-        <div class="row justify-content-center align-items-top">
-          <div class="col-6" id='footer-nav' >
-            <button type="button" class="btn btn-link">back</button>
+              </div>
+            </div>
+            </a>
           </div>
-          <div class="col-6" id='footer-nav' >
-            <button type="button" class="btn btn-link">next</button>
+
+          <!-- <div class="flexcontainer">
+            <div class="quote-wrapper">
+              <div class="quote">
+
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                <p>
+                  Answering where I call home is
+                  always tricky. As I say “Shanghai,”
+                  rhyming it with an American
+                  vernacular to “Slang-high,” I
+                  grimace and anticipate the shock.
+                </p>
+
+                  <p class="author">Proffesor, Con Law</p>
+
+                  <div class="align-right">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
+
+              </div>
+            </div>
+
           </div>
+
+          <div class="flexcontainer">
+            <div class="quote-wrapper">
+              <div class="quote">
+
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                <p>
+                  Answering where I call home is
+                  always tricky. As I say “Shanghai,”
+                  rhyming it with an American
+                  vernacular to “Slang-high,” I
+                  grimace and anticipate the shock.
+                </p>
+
+                  <p class="author">Proffesor, Con Law</p>
+
+                  <div class="align-right">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flexcontainer">
+            <div class="quote-wrapper">
+              <div class="quote">
+
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                <p>
+                  Answering where I call home is
+                  always tricky. As I say “Shanghai,”
+                  rhyming it with an American
+                  vernacular to “Slang-high,” I
+                  grimace and anticipate the shock.
+                </p>
+
+                  <p class="author">Proffesor, Con Law</p>
+
+                  <div class="align-right">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flexcontainer">
+            <div class="quote-wrapper">
+              <div class="quote">
+
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                <p>
+                  Answering where I call home is
+                  always tricky. As I say “Shanghai,”
+                  rhyming it with an American
+                  vernacular to “Slang-high,” I
+                  grimace and anticipate the shock.
+                </p>
+
+                  <p class="author">Proffesor, Con Law</p>
+
+                  <div class="align-right">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flexcontainer">
+            <div class="quote-wrapper">
+              <div class="quote">
+
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                <p>
+                  Answering where I call home is
+                  always tricky. As I say “Shanghai,”
+                  rhyming it with an American
+                  vernacular to “Slang-high,” I
+                  grimace and anticipate the shock.
+                </p>
+
+                  <p class="author">Proffesor, Con Law</p>
+
+                  <div class="align-right">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flexcontainer">
+            <div class="quote-wrapper">
+              <div class="quote">
+
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                <p>
+                  Answering where I call home is
+                  always tricky. As I say “Shanghai,”
+                  rhyming it with an American
+                  vernacular to “Slang-high,” I
+                  grimace and anticipate the shock.
+                </p>
+
+                  <p class="author">Proffesor, Con Law</p>
+
+                  <div class="align-right">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="flexcontainer">
+            <div class="quote-wrapper">
+              <div class="quote">
+
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                <p>
+                  Answering where I call home is
+                  always tricky. As I say “Shanghai,”
+                  rhyming it with an American
+                  vernacular to “Slang-high,” I
+                  grimace and anticipate the shock.
+                </p>
+
+                  <p class="author">Proffesor, Con Law</p>
+
+                  <div class="align-right">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
+
+              </div>
+            </div>
+
+          </div> -->
+
+
+
         </div>
-        <!-- <span class="text-muted">Place sticky footer content here.</span> -->
+
+
       </div>
-    </footer>
+
+      </div>
+
 
 
     <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
@@ -113,8 +287,10 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/writing.js"></script>
 
 
+  </div>
 
 </body>
 </html>

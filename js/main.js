@@ -1,4 +1,11 @@
-
+// $(".quote").hover(function() {
+//   console.log("heys");
+//   $(".author").toggleClass('dark-author');
+//   $(".author").toggleClass('light-author');
+// }, function() {
+//   $(".author").toggleClass('dark-author');
+//   $(".author").toggleClass('light-author');
+// });
 
 function hoverHome(){
   $("#home-btn").hover(function() {
@@ -42,7 +49,7 @@ function whichPage(){
     hoverHome();
     hoverResume();
     hoverWriting();
-  } else if ( document.URL.includes("writing.html") ) {
+  } else if ( document.URL.includes("writing") ) {
     $("#writing-btn").addClass('active-writing');
     hoverAbout();
     hoverResume();
