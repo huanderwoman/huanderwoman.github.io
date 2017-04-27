@@ -1,11 +1,4 @@
-// $(".quote").hover(function() {
-//   console.log("heys");
-//   $(".author").toggleClass('dark-author');
-//   $(".author").toggleClass('light-author');
-// }, function() {
-//   $(".author").toggleClass('dark-author');
-//   $(".author").toggleClass('light-author');
-// });
+
 
 function hoverHome(){
   $("#home-btn").hover(function() {
@@ -29,6 +22,7 @@ function hoverResume(){
   });
 }
 function hoverAbout(){
+  console.log("hoverbutton");
   $("#about-btn").hover(function() {
     $(this).addClass('active-about');
   }, function() {
@@ -75,9 +69,7 @@ function updateHeight() {
     div.css("height", newWidth);
   }
 
-  // $(document).ready(function() {
-  //   whichPage()
-  // });
+
 
 
   // media query event handler
@@ -95,7 +87,13 @@ function updateHeight() {
     } else {
       $(".fa").removeClass('fa-2x')
       $("#about-wrapper").addClass('container')
-
-
     }
   }
+
+// initialize vue
+  var writingExamples = new Vue({
+    el: '#writingPage',
+    data: {
+      examples: examples
+    }
+  });
