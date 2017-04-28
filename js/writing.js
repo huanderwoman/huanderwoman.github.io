@@ -13,11 +13,3 @@ var examples = [{
   link: 'http://pepperdine-graphic.com/nip-and-tuck-how-i-became-outraged-at-the-cosmetic-industry-currents-magazine-spring-2015/',
   blurb: 'That is when it hit me — there could be a “global basis” for beauty, and it certainly was not one where “ethnic” beauty was going to be embraced in terms that I was comfortable with. Yes, while a range of skin colors is likely to be celebrated on billboards worldwide, there is less-than-desirable variability in the type of features being represented. In other words, the Asian model is still likely to have high cheek-bones and larger eyes, while the Black model is likely to have a thinner nose.'
 }]
-
-
-var writingExamples = new Vue({
-  el: '#writingPage',
-  data: {
-    examples: examples
-  }
-});
