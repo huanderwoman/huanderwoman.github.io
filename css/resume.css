@@ -1,7 +1,23 @@
 .lavender {
   background-color: rgb(239, 238, 246);
 }
+#about-summary {
+  padding: 12vw;
+  padding-top: 8vw;
 
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+#pdf-download {
+  float: right;
+}
+i {
+  font-size: 30px !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
 /*Quotes*/
 .quote-wrapper {
   height: 100%;
@@ -60,7 +76,11 @@
 
 
 
-
+h1 {
+  font-size: 2rem !important;
+  margin-bottom: 8% !important;
+  font-family: Georgia italic;
+}
 
 h6 {
   font-weight: bold;
