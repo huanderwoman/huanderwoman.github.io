@@ -82,7 +82,7 @@
 
           <div class="flexcontainer" v-for="example in examples">
             <div class="quote-wrapper">
-              <a href="writing1.html">
+              <a v-bind:href="example.link">
               <div class="quote">
 
                 <i class="fa fa-quote-left" aria-hidden="true"></i>
