@@ -19,7 +19,9 @@ a.navbar-brand {
   color: rgb(71, 71, 71) !important;
   opacity: .91;
   width: 10vw;
+  letter-spacing: 4px;
 }
+
 li.nav-item {
   width: 85px;
   font-family: Georgia-Italic;

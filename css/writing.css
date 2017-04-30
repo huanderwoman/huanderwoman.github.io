@@ -86,7 +86,8 @@ ol.carousel-indicators {
 }
  p {
   font-size: 14.6px;
-  line-height: 18px;
+  line-height: 26px;
+  padding-bottom: 20px;
 }
 
 .col-6 {
