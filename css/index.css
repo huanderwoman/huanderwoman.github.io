@@ -62,8 +62,8 @@ background-size:5px 5px;
 
 }
 .banner-1 {
-  border-style: dotted;
-  border-width: .37vw;
+  border-style: dashed;
+  border-width: .3vw;
   border-color: rgb(34,153,208);
   margin-right: -46%;
   margin-top: -9.5%;
@@ -176,5 +176,16 @@ background-size:5px 5px;
 @media only screen and (min-width: 990px) {
   li.nav-item {
     border: 1px solid rgb(124, 225, 168);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner-1 {
+    width: 65vw;
+    border-width: .57vw;
+  }
+  .banner-2 {
+    width: 65vw;
+    border-width: 1vw;
   }
 }
