@@ -86,7 +86,7 @@ function updateHeight() {
 
     } else {
       $(".fa").removeClass('fa-2x')
-      $("#about-wrapper").addClass('container')
+      // $("#about-wrapper").addClass('container')
     }
   }
 
