@@ -1,11 +1,22 @@
 .lavender {
   background-color: rgb(239, 238, 246);
 }
-#about-summary {
-  padding: 12vw;
-  padding-top: 8vw;
 
-  font-family: 'Quattrocento Sans', sans-serif;
+
+#about-col-1 {
+  width: 48vw;
+  min-width: 607px;
+  min-height: 60vh;
+  max-height: 720px;
+
+}
+#about-summary {
+  width: 48vw;
+  min-width: 607px;
+  min-height: 80vh;
+  max-height: 720px;
+  padding-top: 2.5vw;
+  overflow: hidden;
 }
 
 #pdf-download {
@@ -36,9 +47,11 @@ a:hover {
   color: rgb(146, 146, 146);
 }
 .quote p {
-  font-size: 18px;
+
   margin: 0;
   font-style: italic;
+  font-size: 18px;
+  line-height: 26px;
 
 }
 .quote p.author {
@@ -49,6 +62,7 @@ a:hover {
   margin-right: 10px;
   font-family: 'Fira Sans', sans-serif;
   color: rgb(117, 117, 117);
+  line-height: 17px;
 }
 .align-right {
   text-align: right;
@@ -60,11 +74,13 @@ a:hover {
 .fa-quote-left {
   margin-left: -22px;
   color: rgb(165, 236, 253);
+  font-size: 24px !important;
 }
 .fa-quote-right {
   color: rgb(165, 236, 253);
   padding-left: 10px;
   margin-right: -10px;
+  font-size: 24px !important;
 }
 
 @media only screen and (max-width: 500px) {

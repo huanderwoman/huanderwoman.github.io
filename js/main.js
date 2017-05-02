@@ -48,7 +48,7 @@ function whichPage(){
     hoverAbout();
     hoverResume();
     hoverHome();
-  } else if ( document.URL.includes("resume.html") ) {
+  } else if ( document.URL.includes("resume") ) {
     $("#resume-btn").addClass('active-resume');
     hoverAbout();
     hoverHome();
