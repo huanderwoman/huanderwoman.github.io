@@ -30,34 +30,33 @@ function hoverAbout(){
   });
 }
 
-$(document).ready(function() {
-  // Highlight nav section of current page
-  function whichPage(){
-    if ( document.URL.includes("index.html") ) {
-    $("#home-btn").addClass('actives');
-    // hoverAbout();
+
+
+// Highlight nav section of current page
+function whichPage(){
+  if ( document.URL.includes("index.html") ) {
+  $("#home-btn").addClass('actives');
+  // hoverAbout();
+  // hoverResume();
+  // hoverWriting();
+
+  } else if ( document.URL.includes("about.html") ) {
+    $("#about-btn").addClass('actives');
+    // hoverHome();
     // hoverResume();
     // hoverWriting();
-
-    } else if ( document.URL.includes("about.html") ) {
-      $("#about-btn").addClass('actives');
-      // hoverHome();
-      // hoverResume();
-      // hoverWriting();
-    } else if ( document.URL.includes("writing") ) {
-      $("#writing-btn").addClass('actives');
-      // hoverAbout();
-      // hoverResume();
-      // hoverHome();
-    } else if ( document.URL.includes("resume") ) {
-      $("#resume-btn").addClass('actives');
-      // hoverAbout();
-      // hoverHome();
-      // hoverWriting();
-    }
+  } else if ( document.URL.includes("writing") ) {
+    $("#writing-btn").addClass('actives');
+    // hoverAbout();
+    // hoverResume();
+    // hoverHome();
+  } else if ( document.URL.includes("resume") ) {
+    $("#resume-btn").addClass('actives');
+    // hoverAbout();
+    // hoverHome();
+    // hoverWriting();
   }
-});
-
+}
 
 
 
