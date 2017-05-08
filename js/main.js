@@ -33,26 +33,26 @@ function hoverAbout(){
 // Highlight nav section of current page
 function whichPage(){
   if ( document.URL.includes("index.html") ) {
-  $("#home-btn").addClass('active-home');
-  hoverAbout();
-  hoverResume();
-  hoverWriting();
+  $("#home-btn").addClass('actives');
+  // hoverAbout();
+  // hoverResume();
+  // hoverWriting();
 
   } else if ( document.URL.includes("about.html") ) {
-    $("#about-btn").addClass('active-about');
-    hoverHome();
-    hoverResume();
-    hoverWriting();
+    $("#about-btn").addClass('actives');
+    // hoverHome();
+    // hoverResume();
+    // hoverWriting();
   } else if ( document.URL.includes("writing") ) {
-    $("#writing-btn").addClass('active-writing');
-    hoverAbout();
-    hoverResume();
-    hoverHome();
+    $("#writing-btn").addClass('actives');
+    // hoverAbout();
+    // hoverResume();
+    // hoverHome();
   } else if ( document.URL.includes("resume") ) {
-    $("#resume-btn").addClass('active-resume');
-    hoverAbout();
-    hoverHome();
-    hoverWriting();
+    $("#resume-btn").addClass('actives');
+    // hoverAbout();
+    // hoverHome();
+    // hoverWriting();
   }
 }
 

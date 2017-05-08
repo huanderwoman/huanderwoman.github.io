@@ -5,18 +5,20 @@
 
 #about-col-1 {
   width: 48vw;
-  min-width: 607px;
+  /*min-width: 607px;*/
   min-height: 60vh;
   max-height: 720px;
+  display: block;
 
 }
 #about-summary {
   width: 48vw;
-  min-width: 607px;
+  /*min-width: 607px;*/
   min-height: 80vh;
   max-height: 720px;
-  padding-top: 2.5vw;
+  padding-top: 5vw;
   overflow: hidden;
+  display: block;
 }
 
 #pdf-download {
@@ -89,16 +91,54 @@ a:hover {
     padding-right: 7vw;
   }
 }
+@media only screen and (max-width: 700px) {
+  #about-col-1 {
+    width: 95vw;
+    min-width: 47vw;
+  }
+  #about-summary {
+    width: 95vw;
+    min-width: 47vw;
+  }
+  ol.carousel-indicators {
+    bottom: -3vw;
+  }
+  .carousel-caption {
+    color: rgb(71, 71, 71);
+    bottom: -5vw;
+    font-style: italic;
+  }
+  .page {
+    margin: 2vw;
+  }
+
+}
 
 
 
 h1 {
-  font-size: 2rem !important;
-  margin-bottom: 8% !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 7% !important;
   font-family: Georgia italic;
 }
 
 h6 {
   font-weight: bold;
   margin-bottom: 0;
+}
+
+.quote:hover {
+  background-color: rgb(249, 249, 249);
+  color: rgb(130, 130, 130);
+
+}
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
+.inner-item:hover {
+  background-color: rgb(220,217,206);
+}
+.actives {
+  background-color: rgb(220,217,206);
 }

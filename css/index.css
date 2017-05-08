@@ -29,6 +29,12 @@ li.nav-item a {
   width: 95%;
   height: 90%;
 }
+.inner-item:hover {
+  background-color: rgb(220,217,206);
+}
+.actives {
+  background-color: rgb(220,217,206);
+}
 /*Active Classes */
 .active-home {
   background-color: rgb(220,217,206);
@@ -183,7 +189,7 @@ background-size:5px 5px;
 
 @media only screen and (min-width: 990px) {
   li.nav-item {
-    border: 1px solid rgb(124, 225, 168);
+    border: 1px solid rgb(191, 191, 191);
   }
 }
 
