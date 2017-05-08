@@ -5,13 +5,13 @@ body {
   width: 48vw;
   min-width: 607px;
   min-height: 80vh;
-  max-height: 720px;
+  /*max-height: 720px;*/
 }
 #about-summary {
   width: 48vw;
   min-width: 607px;
   min-height: 80vh;
-  max-height: 720px;
+  /*max-height: 720px;*/
 }
 @media only screen and (min-width: 990px) {
   li.nav-item {

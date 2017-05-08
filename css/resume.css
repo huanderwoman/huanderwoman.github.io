@@ -7,7 +7,7 @@
   width: 48vw;
   /*min-width: 607px;*/
   min-height: 60vh;
-  max-height: 720px;
+  /*max-height: 720px;*/
   display: block;
 
 }
@@ -15,7 +15,7 @@
   width: 48vw;
   /*min-width: 607px;*/
   min-height: 80vh;
-  max-height: 720px;
+  /*max-height: 720px;*/
   padding-top: 5vw;
   overflow: hidden;
   display: block;
