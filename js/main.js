@@ -1,4 +1,6 @@
-
+$(document).ready(function() {
+  $("home-btn").addClass('actives')
+});
 
 function hoverHome(){
   $("#home-btn").hover(function() {
