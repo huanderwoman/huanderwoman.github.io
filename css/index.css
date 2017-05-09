@@ -164,6 +164,14 @@ background-size:5px 5px;
 
 
 }
+@media only screen and (min-width: 1400px) {
+  .banner-1 {
+    max-width: 630px;
+  }
+  .banner-2 {
+    max-width: 630px;
+  }
+}
 
 @media only screen and (max-width: 500px) {
   .banner-wrapper img {

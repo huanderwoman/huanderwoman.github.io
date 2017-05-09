@@ -84,7 +84,12 @@ a:hover {
   margin-right: -10px;
   font-size: 24px !important;
 }
-
+@media only screen and (min-width: 1400px) {
+  .page {
+    padding: 10vw;
+    max-width: 833px;
+  }
+}
 @media only screen and (max-width: 500px) {
   .quote {
     padding-left: 10vw;
