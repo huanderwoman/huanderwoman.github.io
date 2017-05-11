@@ -7,7 +7,8 @@ To add a new item to your resume first start by navigating to the file named "re
 
 <p>Job description</p>
 
-Indentation does not matter. 
+Indentation is not important.
+If, after adding a number of new job items you feel like the first page of your resume is too long you can just shift everything back by one item. To do this, cut your last job entry from resume.html and paste it directly under code line 77 in resume2.html. Then cut the last entry from resume2.html and paste it directly under code line 95, also in reume2.html.
 
 
 
