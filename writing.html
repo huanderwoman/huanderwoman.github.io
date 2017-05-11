@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Writing Justina Huang</title>
+
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/writing.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+  <div id="writingPage">
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+  <nav id="header" class="navbar navbar-toggleable-md navbar-light">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="./index.html">Justina Huang</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item border-right-0 flexcontainer">
+          <div id="home-btn"class="inner-item flexcontainer-nav">
+            <a class="nav-link" href="./index.html">home</a>
+          </div>
+        </li>
+        <li class="nav-item border-right-0 flexcontainer">
+          <div id="writing-btn" class="inner-item flexcontainer-nav">
+            <a class="nav-link" href="./writing.html">writing</a>
+          </div>
+        </li>
+        <li class="nav-item  border-right-0 flexcontainer">
+          <div id="resume-btn" class="inner-item flexcontainer-nav">
+            <a class="nav-link" href="./resume.html">resume</a>
+          </div>
+        </li>
+        <li class="nav-item flexcontainer">
+          <div id="about-btn" class="inner-item flexcontainer-nav">
+            <a class="nav-link" href="./about.html">about<span class="sr-only">(current)</span></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </nav>
+
+
+<div id="about-wrapper">
+
+      <div class="row justify-content-center align-items-top">
+
+        <div class="page col-11 col-lg-9 light-green-back" id='about-media' >
+
+          <h1>Writing</h1>
+
+          <div class="flexcontainer" v-for="example in examples">
+            <div class="quote-wrapper">
+              <a target="_blank" v-bind:href="example.link">
+              <div class="quote">
+
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                <p>
+                  {{example.blurb}}
+                </p>
+
+                  <p class="author light-author">{{example.title}}</p>
+
+                  <div class="align-right">
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                  </div>
+
+              </div>
+            </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      </div>
+
+      <!-- <footer class="footer">
+        <div class="container">
+          <div class="row justify-content-center align-items-top">
+            <div class="col-6" id='footer-nav' >
+              <a href="./writing.html">
+                <button type="button" class="btn btn-link">back</button>
+              </a>
+            </div>
+            <div class="col-6" id='footer-nav' >
+              <a href="./resume2.html">
+                <button type="button" class="btn btn-link">next</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer> -->
+  </div>
+
+
+  <script type="text/javascript" src="js/writing.js"></script>
+
+
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

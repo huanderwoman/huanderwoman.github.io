@@ -1,0 +1,240 @@
+html {
+  background-color: rgb(247, 243, 231);
+}
+body {
+  background-color: rgb(247, 243, 231);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.page-wrapper {
+
+  background-color: rgb(247, 243, 231);
+  height: 100%;
+}
+
+/*Navbar*/
+#header {
+  background-color: rgb(247, 243, 231);
+}
+li.nav-item {
+  width: 85px;
+  font-family: Georgia-Italic;
+
+}
+li.nav-item a {
+
+}
+.inner-item {
+  width: 95%;
+  height: 90% !important;
+}
+.inner-item:hover {
+  background-color: rgb(220,217,206);
+}
+.actives {
+  background-color: rgb(220,217,206);
+}
+/*Active Classes */
+.active-home {
+  background-color: rgb(220,217,206);
+
+}
+.active-writing {
+  background-color: rgb(250, 228, 236);
+
+}
+.active-resume {
+  background-color: rgb(147, 192, 178);
+
+}
+.active-about {
+  background-color:white;
+background-image: linear-gradient(90deg, rgba(100,100,100,.21) 50%, transparent 50%),
+linear-gradient(rgba(100,100,100,.21) 50%, transparent 50%);
+background-size:5px 5px;
+
+
+}
+
+
+
+
+.banner-wrapper img {
+  margin-top: -107px;
+  width: 42vw;
+  right: 18px;
+  position: relative;
+
+}
+.banner-1 {
+  border-style: dashed;
+  border-width: .2vw;
+  border-color: rgb(34,153,208);
+  margin-right: -46%;
+  margin-top: -9.5%;
+  z-index: 5;
+  width: 38vw;
+  transform: translateY(-35px);
+
+}
+.banner-2 {
+  border-style: solid;
+  border-width: .47vw;
+  border-color: rgb(34,153,208);
+  z-index: 5;
+  width: 38vw;
+  transform: translateY(-35px);
+
+}
+
+
+.title {
+  line-height: 175%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -19%;
+  font-size: 1.8vw !important;
+  font-family: 'OctoberStorm';
+  letter-spacing: 5px;
+  color: rgb(81, 80, 76);
+
+}
+.title h1 {
+  margin-bottom: 3.5vh;
+  font-size: 3.7vw;
+  font-weight: 500;
+}
+.title p {
+  margin-bottom: 1.5%;
+  font-size: 1.4vw;
+  line-height: 200%;
+  font-weight: 300;
+  letter-spacing: .6vw;
+}
+
+.social-media-links {
+  margin-left: 4.5vw;
+  width: 30vw;
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+}
+.social-media-links div {
+  width: 100%;
+}
+.social-media-links div a:hover {
+  margin: 1%;
+  color: rgb(237, 110, 78);
+}
+.social-media-links div a {
+  margin: 1%;
+  color: rgb(81, 80, 76);
+}
+
+/*FLEXBOX*/
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+.flexcontainer-nav {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+.flexcontainer-left {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   -webkit-justify-content: flex-start;
+   justify-content: flex-start;
+   background-color: rgb(247, 243, 231);
+
+
+}
+@media only screen and (min-width: 1400px) {
+  .banner-1 {
+    max-width: 630px;
+  }
+  .banner-2 {
+    max-width: 630px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner-wrapper img {
+    width: 80vw;
+  }
+  .title {
+    font-size: 3.5vw !important;
+    color: rgb(81, 80, 76);
+  }
+  .title h1 {
+    font-size: 4.8vw;
+  }
+  .flexcontainer-nav {
+    justify-content: left;
+  }
+}
+
+@media only screen and (max-width: 900px, min-width:501px){
+  .banner-wrapper img {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  li.nav-item {
+    border: 1px solid rgb(191, 191, 191);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner-1 {
+    width: 75vw;
+    border-width: .57vw;
+  }
+
+  .banner-2 {
+    width: 75vw;
+    border-width: 1vw;
+  }
+  .title h1 {
+    margin-bottom: 3.5vh;
+    font-size: 6vw;
+    font-weight: 500;
+  }
+  .title p {
+    margin-bottom: 1.5%;
+    font-size: 3vw;
+    line-height: 200%;
+    font-weight: 300;
+    letter-spacing: 1.3vw;
+  }
+}
+
+@font-face {
+    font-family: 'OctoberStorm';
+    font-weight: 300;
+    src: url('fonts/OctoberStorm.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('fonts/OctoberStorm.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+
+@font-face {
+    font-family: 'OctoberStorm';
+    font-weight: 500;
+    src: url('fonts/OctoberStorm.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('fonts/OctoberStorm.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}

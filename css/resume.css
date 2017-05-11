@@ -1,0 +1,153 @@
+/*body {
+  overflow: hidden;
+}*/
+
+.lavender {
+  background-color: rgb(239, 238, 246);
+}
+
+
+#about-col-1 {
+  width: 48vw;
+  /*min-width: 607px;*/
+  min-height: 60vh;
+  /*max-height: 720px;*/
+  display: block;
+
+}
+#about-summary {
+  width: 48vw;
+  /*min-width: 607px;*/
+  min-height: 80vh;
+  /*max-height: 720px;*/
+  padding-top: 5vw;
+  overflow: hidden;
+  display: block;
+}
+
+#pdf-download {
+  float: right;
+}
+i {
+  font-size: 30px !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/*Quotes*/
+.quote-wrapper {
+  height: 100%;
+  width: 100%;
+}
+.quote {
+  width: 100%;
+  background-color: rgb(253, 253, 253);
+  border-radius: 5px;
+  padding: 1.8vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-bottom: 0;
+  margin: .3vw;
+  line-height: 19px;
+  color: rgb(146, 146, 146);
+}
+.quote p {
+
+  margin: 0;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 26px;
+
+}
+.quote p.author {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  margin-right: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  color: rgb(117, 117, 117);
+  line-height: 17px;
+}
+.align-right {
+  text-align: right;
+  position: relative;
+  bottom: 17px;
+  margin-right: -10px;
+}
+
+.fa-quote-left {
+  margin-left: -22px;
+  color: rgb(165, 236, 253);
+  font-size: 24px !important;
+}
+.fa-quote-right {
+  color: rgb(165, 236, 253);
+  padding-left: 10px;
+  margin-right: -10px;
+  font-size: 24px !important;
+}
+@media only screen and (min-width: 1400px) {
+  .page {
+    padding: 10vw;
+    max-width: 833
+  }
+}
+@media only screen and (max-width: 500px) {
+  .quote {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #about-col-1 {
+    width: 95vw;
+    min-width: 47vw;
+  }
+  #about-summary {
+    width: 95vw;
+    min-width: 47vw;
+  }
+  ol.carousel-indicators {
+    bottom: -3vw;
+  }
+  .carousel-caption {
+    color: rgb(71, 71, 71);
+    bottom: -5vw;
+    font-style: italic;
+  }
+  .page {
+    margin: 2vw;
+  }
+
+}
+
+
+
+h1 {
+  font-size: 1.5rem !important;
+  margin-bottom: 7% !important;
+  font-family: Georgia italic;
+}
+
+h6 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.quote:hover {
+  background-color: rgb(249, 249, 249);
+  color: rgb(130, 130, 130);
+
+}
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
+.inner-item:hover {
+  background-color: rgb(220,217,206);
+}
+.actives {
+  background-color: rgb(220,217,206);
+}
