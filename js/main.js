@@ -93,11 +93,3 @@ function updateHeight() {
       // $("#about-wrapper").addClass('container')
     }
   }
-
-// initialize vue
-  var writingExamples = new Vue({
-    el: '#writingPage',
-    data: {
-      examples: examples
-    }
-  });
