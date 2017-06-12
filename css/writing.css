@@ -208,3 +208,9 @@ a, a:hover, a:active, a:visited, a:focus {
 .actives {
   background-color: rgb(220,217,206);
 }
+
+/*mobile nav padding */
+  a.nav-link {
+    padding-right: 0;
+    padding-left: 10px !important;
+}
