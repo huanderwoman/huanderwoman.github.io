@@ -117,8 +117,8 @@ background-size:5px 5px;
 .social-media-links {
   margin-left: 4.5vw;
   width: 30vw;
-  position: absolute;
-  bottom: 12px;
+  position: relative;
+  bottom: 96px;
   left: 0;
 }
 .social-media-links div {
@@ -223,6 +223,13 @@ background-size:5px 5px;
     line-height: 200%;
     font-weight: 300;
     letter-spacing: 1.3vw;
+  }
+  .social-media-links {
+    margin-left: 4.5vw;
+    width: 30vw;
+    position: relative;
+    bottom: 58px;
+    left: 0;
   }
 }
 
